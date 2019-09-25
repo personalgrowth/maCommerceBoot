@@ -1,0 +1,243 @@
+.maCommerce{
+    width: 100%;
+    height: max-content;
+}
+
+/*首页顶部菜单*/
+.maCommerce .menuHeader{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.maCommerce .menuHeader .menuBox{
+    width: 584px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+.maCommerce .menuHeader .menuBox li{
+    font: 15px '微软雅黑';
+    color: #333333;
+    cursor: pointer;
+}
+.maCommerce .menuHeader .contact,
+.maCommerce .pageHeader .contact{
+    width: 80px;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.maCommerce .menuHeader .contact > .wechat,
+.maCommerce .menuHeader .contact > .qq,
+.maCommerce .pageHeader .contact > .wechat,
+.maCommerce .pageHeader .contact > .qq{
+    width: 20px;
+}
+.maCommerce .menuHeader .contact > .wechat img,
+.maCommerce .menuHeader .contact > .qq img,
+.maCommerce .pageHeader .contact > .wechat img,
+.maCommerce .pageHeader .contact > .qq img{
+    width: 100%;
+    height: auto;
+}
+.maCommerce .menuHeader .contact > span.cut,
+.maCommerce .pageHeader .contact > span.cut{
+    width:1px;
+    height:16px;
+    background:rgba(40,41,45,0.32);
+}
+
+/*其他页面顶部菜单*/
+.maCommerce .pageHeader{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #C7C8C9;
+}
+.maCommerce .pageHeader .logo{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: 34px;
+    margin-right: 60px;
+}
+.maCommerce .pageHeader .logo img{
+    height: 34px;
+    width: auto;
+    margin-right: 7px;
+}
+.maCommerce .pageHeader .logo span{
+    font: 21px '微软雅黑';
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height: 34px;
+}
+.maCommerce .pageHeader .public{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45px;
+}
+.maCommerce .pageHeader .public .bigTitle{
+    font: 20px '微软雅黑';
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    margin-bottom: 8px;
+}
+.maCommerce .pageHeader .public .smallTitle{
+    font-size:8px;
+    font-family:Myriad Variable Concept;
+    font-weight:400;
+    color:rgba(51,51,51,0.43);
+}
+
+/*主体布局*/
+.maCommerce .main{
+    width: 100%;
+    height: max-content;
+}
+.maCommerce .main > .bannerBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce .main > .bannerBox{
+        height: 701px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce .main > .bannerBox{
+        height: 501px;
+    }
+}
+.maCommerce .main > .bannerBox .swiper-container{
+    height: 100%;
+}
+.maCommerce .main > .bannerBox .swiper-slide{
+    display:flex;
+    justify-content: center;
+}
+.maCommerce .main > .bannerBox .swiper-slide > img{
+    width: 100%;
+    height: 100%;
+}
+.maCommerce .main > .productModule{
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 62.3%;
+    height: max-content;
+}
+.maCommerce .main > .productModule .moduleTitle{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.maCommerce .main > .productModule .moduleTitle .titleBackImg{
+    position: relative;
+    margin: 0 auto;
+    width: 77.8%;
+    height: auto;
+}
+.maCommerce .main > .productModule .moduleTitle .moreBlock{
+    position: absolute;
+    width: 155px;
+    top: 0px;
+    left: 50%;
+    margin-left: -77.5px;
+}
+.maCommerce .main > .productModule .moduleTitle .moreBlock img{
+    width: 100%;
+    height: auto;
+}
+.maCommerce .main > .productModule .moduleContent{
+    width: 100%;
+    height: max-content;
+}
+.maCommerce .main > .productModule .moduleContent .imgModule{
+    position: relative;
+    float: left;
+    width: 33%;
+    margin: 0 3px 3px 0;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+@media screen and (min-width: 1366px){
+    .maCommerce .main > .productModule .moduleContent .imgModule{
+        height: 349px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .maCommerce .main > .productModule .moduleContent .imgModule{
+        height: 247px;
+    }
+}
+.maCommerce .main > .productModule .moduleContent .imgModule img,
+.maCommerce .main > .productModule .moduleContent .imgModule video{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.maCommerce .main > .productModule .moduleContent .imgModule:nth-child(3n+3){
+    margin-right: 0px;
+}
+
+.maCommerce .main > .productModule .pageTop{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+/*页脚*/
+.maCommerce .footer{
+    width: 100%;
+    height:278px;
+    background:rgba(232,232,232,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.maCommerce .footer .footerModule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80px;
+}
+.maCommerce .footer .footerModule:last-child{
+    margin-right: 0px;
+}
+.maCommerce .footer .footerModule img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.maCommerce .footer .footerModule img.erweima{
+    width: 117px;
+    height: 117px;
+}
+.maCommerce .footer .footerModule span{
+    font: 15px '微软雅黑';
+    color: #343434;
+    font-weight: 700;
+}
