@@ -177,25 +177,153 @@
     color:rgba(255,255,255,1);
     z-index: 999;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.maCommerce .aboutMain .moduleFour .currentCont{
+    width: 100%;
+    height: 353px;
+    display: flex;
+    justify-content: flex-start;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li{
+    width: 23.5%;
+    height: 100%;
+    margin-right: 2%;
+    background:rgba(252,252,252,1);
+    box-shadow:4px 4px 7px 0px rgba(6,6,6,0.14);
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    -moz-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    -o-box-shadow: 4px 4px 7px 0px rgba(6,6,6,0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li:last-child{
+    margin-right: 0;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox > span:first-child{
+    width:33px;
+    height:4px;
+    background:rgba(102,102,102,1);
+    margin-bottom: 25px;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .titleBox > span:last-child{
+    font: 25px '微软雅黑';
+    font-weight:400;
+    color:rgba(102,102,102,1);
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox p{
+    font: 13px '微软雅黑';
+    color: rgba(102,102,102,1);
+    text-align:center;
+    margin-bottom: 5px;
+}
+.maCommerce .aboutMain .moduleFour .currentCont > li > .contentBox p:last-child{
+    margin-bottom: 0px;
+}
+.aboutMain .moduleFive{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 110px;
+}
+.aboutMain .moduleFive > h1{
+    width:100%;
+    font-size:40px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    margin-bottom: 40px;
+}
+.aboutMain .moduleFive > h1 > p{
+    width: 100%;
+    text-align: left;
+}
+.aboutMain .moduleFive > h1 > p:first-child{
+    margin-bottom: 17px;
+}
+.aboutMain .moduleFive  > .productInfo{
+    width: 92.6%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.aboutMain .moduleFive  > .productInfo > li{
+    width: 100%;
+    height: 114px;
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background:rgba(227,227,227,1);
+}
+.aboutMain .moduleFive  > .productInfo > li > span{
+    font-size:54px;
+    font-family:BDZYJT;
+    font-weight:normal;
+    color:rgba(102,102,102,1);
+    margin-right: 40px;
+}
+.aboutMain .moduleFive  > .productInfo > li > p{
+    width: 75%;
+    line-height: 45px;
+    font-size: 26px;
+    color:rgba(102,102,102,1);
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive{
+    background:rgba(204,0,0,1);
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive > span{
+    color: white;
+}
+.aboutMain .moduleFive  > .productInfo > li.productInfoActive > p{
+    color: white;
+}
+.aboutMain .moduleFive  > .imgTitle{
+    margin-top: 60px;
+    margin-bottom: 33px;
+    text-align: center;
+    width: 100%;
+    font-size:24px;
+    color:rgba(102,102,102,1);
+}
+.aboutMain .moduleFive  > .showImgBox{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule{
+    position: relative;
+    float: left;
+    width: 24.5%;
+    margin-right: 0.5%;
+    height: max-content;
+    margin-bottom: 3px;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule img{
+    width: 100%;
+    height: auto;
+}
+.aboutMain .moduleFive  > .showImgBox > .imgModule:last-child{
+    margin-right: 0;
+}
 
 
