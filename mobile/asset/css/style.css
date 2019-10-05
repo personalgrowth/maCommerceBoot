@@ -2,3 +2,24 @@
     width: 100%;
     height: 100%;
 }
+.maMobile .homeBanner{
+    width: 100%;
+    height: 5.173333rem;
+    margin-bottom: 1.226666rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.homeBanner .leftLogoBox{
+    width: 35.7%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.586666rem 0 0 0.4rem;
+}
+
+.homeBanner .rightBannerBox{
+    width: 64.3%;
+    height: 100%;
+}
+
