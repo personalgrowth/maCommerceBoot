@@ -4,6 +4,7 @@
 }
 
 .maMobile .homeBanner {
+    position: relative;
     width: 100%;
     height: 5.173333rem;
     margin-bottom: 1.226666rem;
@@ -48,29 +49,180 @@
     color: rgba(51, 51, 51, 1);
     margin-bottom: 0.4266666rem;
 }
-.homeBanner .leftLogoBox .contact{
+
+.homeBanner .leftLogoBox .contact {
     width: 120px;
     height: max-content;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.homeBanner .leftLogoBox .contact > .wechat{
+
+.homeBanner .leftLogoBox .contact > .wechat {
     margin-right: 0.8rem;
 }
-.homeBanner .leftLogoBox .contact > .wechat{
+
+.homeBanner .leftLogoBox .contact > .wechat {
     width: 25px;
 }
-.homeBanner .leftLogoBox .contact > .qq{
+
+.homeBanner .leftLogoBox .contact > .qq {
     width: 15px;
 }
+
 .homeBanner .leftLogoBox .contact > .wechat img,
-.homeBanner .leftLogoBox .contact > .qq img{
+.homeBanner .leftLogoBox .contact > .qq img {
     width: 100%;
     height: auto;
 }
+
 .homeBanner .rightBannerBox {
     width: 62%;
     height: 100%;
+    overflow: hidden;
 }
+
+.homeBanner .pageBox {
+    position: absolute;
+    left: 1.9rem;
+    bottom: -0.5rem;
+    width: 3.52rem;
+    height: 1.06666rem;
+    background-color: rgba(251, 251, 251, 1);
+    display: flex;
+    align-items: center;
+}
+
+.homeBanner .pageBox:after {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(250, 152, 1, 1);
+}
+
+.homeBanner .pageBox > ul {
+    display: flex;
+    justify-content: flex-start;
+    font: 0.26666rem '微软雅黑';
+    color: rgba(102, 102, 102, 1);
+    margin-left: 22px;
+}
+
+.homeBanner .pageBox > ul > li {
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.homeBanner .pageBox > ul > li:last-child {
+    margin-right: 0;
+}
+
+.homeBanner .pageBox > ul > li.bannerPageActive {
+    font-size: 0.4rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.mobileMain {
+    width: 100%;
+    height: max-content;
+    padding: 0 0.4rem;
+}
+
+.mobileMain > .caseTitle {
+    font-size: 19px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(120, 120, 120, 1);
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.mobileMain > .caseBox {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+
+.mobileMain > .caseBox > .moduleImg,
+.mobileMain > .caseBox > .moduleVideo {
+    position: absolute;
+    float: left;
+    width: 47%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #eeeeee;
+    /*margin-bottom: 0.48rem;*/
+}
+
+/*.mobileMain > .caseBox > .moduleImg:nth-of-type(odd),*/
+/*.mobileMain > .caseBox > .moduleVideo:nth-of-type(odd) {*/
+/*    margin-right: 6%;*/
+/*}*/
+
+.mobileMain > .caseBox > .moduleImg {
+    height: max-content;
+}
+
+.mobileMain > .caseBox > .moduleVideo {
+    height: 4.266666rem;
+}
+
+.mobileMain > .caseBox > .moduleVideo > video {
+    height: 100%;
+}
+
+.mobileMain > .caseBox > .moduleImg > .introduce,
+.mobileMain > .caseBox > .moduleVideo > .introduce {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px 6px;
+    background-color: white;
+    color: rgba(140, 140, 140, 1);
+}
+
+.mobileMain > .caseBox > .moduleImg > .introduce:after,
+.mobileMain > .caseBox > .moduleVideo > .introduce:after {
+    content: '';
+    width: 7px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(59, 59, 59, 1);
+}
+
+.mobileMain > .caseBox > .moduleVideo > .player {
+    position: absolute;
+}
+
+.mobileMain > .caseBox > .moduleVideo > .player > img {
+    width: 39px;
+    height: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
