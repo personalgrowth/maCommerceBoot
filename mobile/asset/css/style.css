@@ -1,16 +1,18 @@
-.maMobile{
+.maMobile {
     width: 100%;
     height: 100%;
 }
-.maMobile .homeBanner{
+
+.maMobile .homeBanner {
     width: 100%;
     height: 5.173333rem;
     margin-bottom: 1.226666rem;
     display: flex;
     justify-content: flex-start;
 }
-.homeBanner .leftLogoBox{
-    width: 35.7%;
+
+.homeBanner .leftLogoBox {
+    width: 38%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,8 +20,57 @@
     padding: 0.586666rem 0 0 0.4rem;
 }
 
-.homeBanner .rightBannerBox{
-    width: 64.3%;
+.homeBanner .leftLogoBox img {
+    width: 1.36rem;
+    margin-bottom: 0.426666rem;
+}
+
+.homeBanner .leftLogoBox .pinpai {
+    font-size: 0.266666rem;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 0.6933333rem;
+}
+
+.homeBanner .leftLogoBox .yuyue {
+    font-size: 0.45555rem;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0.255555rem;
+}
+
+.homeBanner .leftLogoBox .lianxiren {
+    font-size: 0.333333rem;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 0.4266666rem;
+}
+.homeBanner .leftLogoBox .contact{
+    width: 120px;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.homeBanner .leftLogoBox .contact > .wechat{
+    margin-right: 0.8rem;
+}
+.homeBanner .leftLogoBox .contact > .wechat{
+    width: 25px;
+}
+.homeBanner .leftLogoBox .contact > .qq{
+    width: 15px;
+}
+.homeBanner .leftLogoBox .contact > .wechat img,
+.homeBanner .leftLogoBox .contact > .qq img{
+    width: 100%;
+    height: auto;
+}
+.homeBanner .rightBannerBox {
+    width: 62%;
     height: 100%;
 }
 
