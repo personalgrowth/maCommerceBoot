@@ -5,15 +5,143 @@
     <title>亚马逊内页</title>
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <style>
+        .maProduct {
+            width: 100%;
+            height: max-content;
+            border: 1px solid #E4E4E4;
+            margin-bottom: 7px;
+        }
+
+        .maProduct img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
+<div class="maMobile">
+    <div class="mobileHeader">
+        <div class="logo">
+            <img src="asset/images/public/logoWhite.png" alt="">
+            <span>博爱影像</span>
+        </div>
+        <div class="contact">
+            <div class="qq">
+                <img src="asset/images/public/wechatWhite.png" alt="">
+            </div>
+            <span class="cut"></span>
+            <div class="wechat">
+                <img src="asset/images/public/mobileWhite.png" alt="">
+            </div>
+            <span class="cut"></span>
+            <div class="qq">
+                <img src="asset/images/public/home.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="mobileMenu">
+        <div class="logoModule logoModuleActive">
+            <a href="javascript:;">
+                <img src="asset/images/public/pen.png" alt="" class="img" style="display: none">
+                <img src="asset/images/public/penActive.png" alt="" class="imgActive" style="display: block">
+                <span class="title">原创设计</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/article.png" alt="" class="img">
+                <img src="asset/images/public/articleActive.png" alt="" class="imgActive">
+                <span class="title">创意拍摄</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/maya.png" alt="" class="img">
+                <img src="asset/images/public/mayaActive.png" alt="" class="imgActive">
+                <span class="title">亚马逊</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/sanjiao.png" alt="" class="img">
+                <img src="asset/images/public/sanjiaoActive.png" alt="" class="imgActive">
+                <span class="title">影视创作</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/person.png" alt="" class="img">
+                <img src="asset/images/public/personActive.png" alt="" class="imgActive">
+                <span class="title">关于我们</span>
+            </a>
+        </div>
+    </div>
+    <main class="mobileMain">
+        <div class="labelCurrent">
+            <ul>
+                <li class="mainLabelCurrentActive">只走心</li>
+                <li>不走量</li>
+            </ul>
+            <p>八年专业影像设计，为千万卖家提高转化</p>
+        </div>
+
+        <div class="mainCurrent">
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaProduct.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaTwo.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaThree.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaFour.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaFive.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaSix.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaSeven.png" alt=""></div>
+        </div>
+
+        <div class="mainCurrent" style="display: none">
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaProduct.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaTwo.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaThree.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaFour.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaFive.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaSix.png" alt=""></div>
+            <div class="maProduct"><img src="asset/images/yaMa/yaMaSeven.png" alt=""></div>
+        </div>
+    </main>
+    <footer class="mobileFooter">
+        <div class="contact">
+            <div class="wechat">
+                <img src="asset/images/public/qq.png" alt="">
+            </div>
+            <div class="qq">
+                <img src="asset/images/public/mobile.png" alt="">
+            </div>
+            <div class="wechat" style="width: .8rem">
+                <img src="asset/images/public/wechat.png" alt="">
+            </div>
+        </div>
+        <p class="qiyeTitle">深圳博爱光学科技有限公司</p>
+        <p class="location">地址：深圳市坪山区龙田街道青松西路豪威工业园</p>
+    </footer>
+</div>
 
 <script type="text/javascript" src="asset/js/flex.js"></script>
 <script type="text/javascript" src="asset/js/zepto.js"></script>
 <script type="text/javascript" src="asset/js/touch.js"></script>
 <script>
-    Zepto(function ($) {
+    Zepto(function($){
+        $(".logoModule").on("touchend", function(){
+            $(this).addClass("logoModuleActive").siblings(".logoModule").removeClass("logoModuleActive");
+            $(this).find(".imgActive").show();
+            $(this).find(".img").hide();
+            $(this).siblings(".logoModule").find(".imgActive").hide();
+            $(this).siblings(".logoModule").find('.img').show();
+        });
 
+        //标签切换
+        $(".labelCurrent li").on('touchend', function(){
+            var index = $(this).index();
+            $(this).addClass("mainLabelCurrentActive").siblings("li").removeClass("mainLabelCurrentActive");
+            $(".mainCurrent").hide().eq(index).show();
+        });
     })
 </script>
 </body>
