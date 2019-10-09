@@ -127,11 +127,12 @@
     color: #000000;
 }
 
+/*顶部导航*/
 .mobileHeader {
     position: relative;
     width: 100%;
     height: 56px;
-    background-color:rgba(220,47,47,1);
+    background-color: rgba(220, 47, 47, 1);
     padding: 14px 16px;
     display: flex;
     justify-content: space-between;
@@ -171,7 +172,7 @@
     width: 0.666667rem;
 }
 
-.mobileHeader .contact > .wechat{
+.mobileHeader .contact > .wechat {
     width: 0.4rem;
 }
 
@@ -186,6 +187,93 @@
     height: 16px;
     background: rgba(255, 255, 255, 0.5);
     margin: 0 .266667rem;
+}
+
+/*logo菜单展示*/
+.mobileMenu {
+    position: relative;
+    width: 100%;
+    height: 2.24rem;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 1);;
+}
+
+.mobileMenu .logoModule {
+    width: max-content;
+    height: 100%;
+}
+
+.mobileMenu .logoModule > a {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileMenu .logoModule:last-child {
+    margin-right: 0px;
+}
+
+.mobileMenu .logoModule img {
+    height: .586666rem;
+    width: auto;
+    margin-bottom: 0.4rem;
+}
+
+.mobileMenu .logoModule img.imgActive {
+    display: none;
+}
+
+.mobileMenu .logoModule span.title {
+    font-size: 12px;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+}
+
+.mobileMenu .logoModuleActive span.title {
+    color: #CD1C1C;
+}
+
+/*标签切换样式*/
+.maMobile .labelCurrent{
+    width: 100%;
+    height: max-content;
+    margin-top:.53333rem;
+    margin-bottom: .693333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maMobile .labelCurrent > ul{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: max-content;
+    margin-bottom: .453333rem;
+}
+.maMobile .labelCurrent > ul > li{
+    padding: 6px 15px;
+    border: 1px solid #000000;
+    font-size:14px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.maMobile .labelCurrent > ul > li.mainLabelCurrentActive{
+    background-color: #000000;
+    color: white;
+}
+.maMobile .labelCurrent > p{
+    font-size:14px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(51,51,51,1);
 }
 
 .mobileMain {

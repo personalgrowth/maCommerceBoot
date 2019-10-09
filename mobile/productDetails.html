@@ -5,6 +5,8 @@
     <title>产品视频详情页</title>
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/productDetails.css">
+    <link rel="stylesheet" href="asset/libs/page/paging.css">
 </head>
 <body>
 <div class="maMobile">
@@ -27,15 +29,145 @@
             </div>
         </div>
     </div>
+    <div class="mobileMenu">
+        <div class="logoModule logoModuleActive">
+            <a href="javascript:;">
+                <img src="asset/images/public/pen.png" alt="" class="img" style="display: none">
+                <img src="asset/images/public/penActive.png" alt="" class="imgActive" style="display: block">
+                <span class="title">原创设计</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/article.png" alt="" class="img">
+                <img src="asset/images/public/articleActive.png" alt="" class="imgActive">
+                <span class="title">创意拍摄</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/maya.png" alt="" class="img">
+                <img src="asset/images/public/mayaActive.png" alt="" class="imgActive">
+                <span class="title">亚马逊</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/sanjiao.png" alt="" class="img">
+                <img src="asset/images/public/sanjiaoActive.png" alt="" class="imgActive">
+                <span class="title">影视创作</span>
+            </a>
+        </div>
+        <div class="logoModule">
+            <a href="javascript:;">
+                <img src="asset/images/public/person.png" alt="" class="img">
+                <img src="asset/images/public/personActive.png" alt="" class="imgActive">
+                <span class="title">关于我们</span>
+            </a>
+        </div>
+    </div>
+    <main class="shootProductMain">
+        <div class="labelCurrent">
+            <ul>
+                <li class="mainLabelCurrentActive">只走心</li>
+                <li>不走量</li>
+            </ul>
+            <p>八年专业影像设计，为千万卖家提高转化</p>
+        </div>
+        <!--只走心-->
+        <div class="mainCurrent">
+            <div class="shootProduct" id="productModuleOne">
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pageFun" id="moduleOnePage"></div>
+        </div>
+        <!--不走量-->
+        <div class="mainCurrent" style="display: none">
+            <div class="shootProduct" id="productModuleTwo">
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="productModule">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pageFun" id="moduleTwoPage"></div>
+        </div>
+    </main>
+    <footer class="mobileFooter">
+        <div class="contact">
+            <div class="wechat">
+                <img src="asset/images/public/qq.png" alt="">
+            </div>
+            <div class="qq">
+                <img src="asset/images/public/mobile.png" alt="">
+            </div>
+            <div class="wechat" style="width: .8rem">
+                <img src="asset/images/public/wechat.png" alt="">
+            </div>
+        </div>
+        <p class="qiyeTitle">深圳博爱光学科技有限公司</p>
+        <p class="location">地址：深圳市坪山区龙田街道青松西路豪威工业园</p>
+    </footer>
 </div>
 
 <script type="text/javascript" src="asset/js/flex.js"></script>
 <script type="text/javascript" src="asset/js/zepto.js"></script>
 <script type="text/javascript" src="asset/js/touch.js"></script>
-<script>
-    Zepto(function ($) {
-
-    })
-</script>
+<script type="text/javascript" src="asset/libs/page/paging.js"></script>
+<script type="text/javascript" src="asset/js/index.js"></script>
 </body>
 </html>
