@@ -131,6 +131,7 @@
     width: 100%;
     height: max-content;
     padding: 0 0.4rem;
+    margin-bottom: 0.533333rem;
 }
 
 .mobileMain > .caseTitle {
@@ -162,6 +163,13 @@
     /*margin-bottom: 0.48rem;*/
 }
 
+.mobileMain > .caseBox > .moduleImg > a,
+.mobileMain > .caseBox > .moduleVideo > a {
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+}
+
 /*.mobileMain > .caseBox > .moduleImg:nth-of-type(odd),*/
 /*.mobileMain > .caseBox > .moduleVideo:nth-of-type(odd) {*/
 /*    margin-right: 6%;*/
@@ -175,12 +183,12 @@
     height: 4.266666rem;
 }
 
-.mobileMain > .caseBox > .moduleVideo > video {
+.mobileMain > .caseBox > .moduleVideo video {
     height: 100%;
 }
 
-.mobileMain > .caseBox > .moduleImg > .introduce,
-.mobileMain > .caseBox > .moduleVideo > .introduce {
+.mobileMain > .caseBox > .moduleImg .introduce,
+.mobileMain > .caseBox > .moduleVideo .introduce {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -189,8 +197,8 @@
     color: rgba(140, 140, 140, 1);
 }
 
-.mobileMain > .caseBox > .moduleImg > .introduce:after,
-.mobileMain > .caseBox > .moduleVideo > .introduce:after {
+.mobileMain > .caseBox > .moduleImg .introduce:after,
+.mobileMain > .caseBox > .moduleVideo .introduce:after {
     content: '';
     width: 7px;
     height: 1px;
@@ -200,29 +208,168 @@
     background-color: rgba(59, 59, 59, 1);
 }
 
-.mobileMain > .caseBox > .moduleVideo > .player {
+.mobileMain > .caseBox > .moduleVideo .player {
     position: absolute;
 }
 
-.mobileMain > .caseBox > .moduleVideo > .player > img {
+.mobileMain > .caseBox > .moduleVideo .player > img {
     width: 39px;
     height: 39px;
 }
 
+.mobileMain > .moreTitle {
+    position: relative;
+    margin: 1.06666rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
 
+.mobileMain > .moreTitle:before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #000000;
+}
 
+.mobileMain > .moreTitle > span {
+    width: 3px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 15px;
+}
 
+.mobileMain > .newsTitle {
+    text-align: left;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    align-items: center;
+}
 
+.mobileMain > .newsTitle:before {
+    content: '';
+    width: 12px;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    margin-right: 5px;
+}
 
+.mobileMain > .newsModule {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
 
+.mobileMain > .newsModule > li {
+    width: 100%;
+    height: 2.346666rem;
+    margin-bottom: 1.226666rem;
+}
 
+.mobileMain > .newsModule > li:last-child {
+    margin-bottom: 0;
+}
 
+.mobileMain > .newsModule > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.mobileMain > .newsModule > li .imgBox {
+    width: 3.52rem;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
+.mobileMain > .newsModule > li .imgBox > img {
+    width: auto;
+    height: 100%;
+}
 
+.mobileMain > .newsModule > li .textBox {
+    width: 5.373333rem;
+    height: 100%;
+    padding: 0.2133333rem 0.24rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
 
+.mobileMain > .newsModule > li .textBox > .time {
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    color: rgba(140, 140, 140, 1);
+    margin-bottom: 0.286666rem;
+}
 
+.mobileMain > .newsModule > li .textBox > .title {
+    font-size: 16px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 0.24rem;
+}
 
+.mobileMain > .newsModule > li .textBox > .content {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+    font-size: 12px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: rgba(140, 140, 140, 1);
+    line-height: 13px;
+}
 
+.mobileFooter{
+    width: 100%;
+    height: 6.733333rem;
+    padding: 0.93333rem 0.8rem;
+    background-color: rgba(232,232,232,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.mobileFooter .contact {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.mobileFooter .contact .wechat {
+    width: .66666rem;
+    margin-right: 0.8rem;
+}
+
+.mobileFooter .contact .qq {
+    width: .53333rem;
+    margin-right: 0.8rem;
+}
+
+.mobileFooter .contact .wechat img,
+.mobileFooter .contact .qq img {
+    width: 100%;
+    height: auto;
+}

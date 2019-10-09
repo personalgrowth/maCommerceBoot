@@ -18,11 +18,11 @@ function waterFall() {
     var arr = [];
 
     $(".caseBox .itemModule").each(function(i){
-        if($(this).children("img").eq(0).length == '1'){
+        if($(this).children("a").children("img").eq(0).length == '1'){
             var height = $(this).height();
             var width = $(this).width();
             var bi = itemWidth/width; //获取缩小的比值
-            var boxheight = parseInt(height*(bi-0.05)); //图片的高度*比值 = item的高度
+            var boxheight = parseInt(height*(bi-0.06)); //图片的高度*比值 = item的高度
 
             if (i < columns) {
                 // 2- 确定第一行
@@ -92,6 +92,10 @@ function waterFall() {
             }
         }
     });
+    //确定最大盒子的高度
+    $(".caseBox").css({
+        'height': arr[0] - 19
+    })
 }
 
 
