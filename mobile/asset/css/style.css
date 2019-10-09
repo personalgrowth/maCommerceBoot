@@ -279,6 +279,9 @@
 .mobileMain {
     width: 100%;
     height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 0 0.4rem;
     margin-bottom: 0.533333rem;
 }
