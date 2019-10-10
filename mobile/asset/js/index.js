@@ -16,30 +16,34 @@ Zepto(function ($) {
     });
 
     //只走心
-    $("#moduleOnePage").paging({
-        nowPage: 1, // 当前页码
-        pageNum: 10, // 总页码
-        buttonNum: 5, //要展示的页码数量
-        canJump: 0,// 是否能跳转。0=不显示（默认），1=显示
-        showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
-        callback: function (num) { //回调函数
-            console.log(num);
+    if($("#moduleOnePage").size() > 0){
+        $("#moduleOnePage").paging({
+            nowPage: 1, // 当前页码
+            pageNum: 10, // 总页码
+            buttonNum: 5, //要展示的页码数量
+            canJump: 0,// 是否能跳转。0=不显示（默认），1=显示
+            showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
+            callback: function (num) { //回调函数
+                console.log(num);
 
-            //请求ajax，刷新列表
-        }
-    });
+                //请求ajax，刷新列表
+            }
+        });
+    }
 
     //不走量
-    $("#moduleTwoPage").paging({
-        nowPage: 1, // 当前页码
-        pageNum: 10, // 总页码
-        buttonNum: 5, //要展示的页码数量
-        canJump: 0,// 是否能跳转。0=不显示（默认），1=显示
-        showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
-        callback: function (num) { //回调函数
-            console.log(num);
+    if($("#moduleTwoPage").size() > 0){
+        $("#moduleTwoPage").paging({
+            nowPage: 1, // 当前页码
+            pageNum: 10, // 总页码
+            buttonNum: 5, //要展示的页码数量
+            canJump: 0,// 是否能跳转。0=不显示（默认），1=显示
+            showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
+            callback: function (num) { //回调函数
+                console.log(num);
 
-            //请求ajax，刷新列表
-        }
-    });
+                //请求ajax，刷新列表
+            }
+        });
+    }
 });
