@@ -1,19 +1,23 @@
-Zepto(function ($) {
-    //菜单切换
-    $(".logoModule").on("touchend", function(){
-        $(this).addClass("logoModuleActive").siblings(".logoModule").removeClass("logoModuleActive");
-        $(this).find(".imgActive").show();
-        $(this).find(".img").hide();
-        $(this).siblings(".logoModule").find(".imgActive").hide();
-        $(this).siblings(".logoModule").find('.img').show();
-    });
+$(function(){
+    //顶部菜单切换
+    if($(".logoModule").size() > 0){
+        $(".logoModule").on("touchend", function(){
+            $(this).addClass("logoModuleActive").siblings(".logoModule").removeClass("logoModuleActive");
+            $(this).find(".imgActive").show();
+            $(this).find(".img").hide();
+            $(this).siblings(".logoModule").find(".imgActive").hide();
+            $(this).siblings(".logoModule").find('.img').show();
+        });
+    }
 
     //标签切换
-    $(".labelCurrent li").on('touchend', function(){
-        var index = $(this).index();
-        $(this).addClass("mainLabelCurrentActive").siblings("li").removeClass("mainLabelCurrentActive");
-        $(".mainCurrent").hide().eq(index).show();
-    });
+    if($(".labelCurrent").size() > 0){
+        $(".labelCurrent li").on('touchend', function(){
+            var index = $(this).index();
+            $(this).addClass("mainLabelCurrentActive").siblings("li").removeClass("mainLabelCurrentActive");
+            $(".mainCurrent").hide().eq(index).show();
+        });
+    }
 
     //只走心
     if($("#moduleOnePage").size() > 0){
@@ -46,4 +50,10 @@ Zepto(function ($) {
             }
         });
     }
+
+    //回到页面顶部
+    $(".pageTop").on('touchend', function(){
+        $('body,html').animate({scrollTop:0},300);
+        return false;
+    })
 });

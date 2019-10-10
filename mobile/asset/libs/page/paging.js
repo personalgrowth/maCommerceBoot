@@ -159,4 +159,4 @@
     $.fn.paging = function (options) {
         return new Paging($(this), options);
     }
-})(Zepto, window, document);
+})(jQuery, window, document);
