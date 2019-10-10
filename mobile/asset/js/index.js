@@ -1,11 +1,22 @@
 $(function(){
-    //微信二维码显示隐藏
+    //页眉微信二维码显示隐藏
     $(".wechatShowPerson").on('click', function(e){
         e.stopPropagation();
         $(".wechatPerson").show();
 
         $("body").on('click', function(){
             $(".wechatPerson").hide();
+            $("body").off('click');
+        })
+    });
+
+    //页脚微信二维码显示隐藏
+    $(".footerWechatShow").on('click', function(e){
+        e.stopPropagation();
+        $(".footerWechatBox").show();
+
+        $("body").on('click', function(){
+            $(".footerWechatBox").hide();
             $("body").off('click');
         })
     });

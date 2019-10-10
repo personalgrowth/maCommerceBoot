@@ -110,51 +110,6 @@
     overflow: hidden;
 }
 
-.homeBanner .pageBox {
-    position: absolute;
-    left: 1.9rem;
-    bottom: -0.5rem;
-    width: 3.52rem;
-    height: 1.06666rem;
-    background-color: rgba(251, 251, 251, 1);
-    display: flex;
-    align-items: center;
-}
-
-.homeBanner .pageBox:after {
-    content: '';
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(250, 152, 1, 1);
-}
-
-.homeBanner .pageBox > ul {
-    display: flex;
-    justify-content: flex-start;
-    font: 0.26666rem '微软雅黑';
-    color: rgba(102, 102, 102, 1);
-    margin-left: 22px;
-}
-
-.homeBanner .pageBox > ul > li {
-    margin-right: 20px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.homeBanner .pageBox > ul > li:last-child {
-    margin-right: 0;
-}
-
-.homeBanner .pageBox > ul > li.bannerPageActive {
-    font-size: 0.4rem;
-    font-weight: 700;
-    color: #000000;
-}
-
 /*顶部导航*/
 .mobileHeader {
     position: relative;
@@ -641,6 +596,20 @@
 
 .mobileFooter .pageTop > img{
     width: .506666rem;
+    height: auto;
+}
+
+.mobileFooter .footerWechatBox {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    bottom: 4rem;
+    left: 2.95rem;
+    z-index: 999;
+}
+
+.mobileFooter .footerWechatBox > img {
+    width: 100%;
     height: auto;
 }
 

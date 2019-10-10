@@ -5,6 +5,58 @@
     <title>首页</title>
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="../asset/lib/swiper/swiper.min.css">
+    <style>
+        /*banner分页样式*/
+        .homeBanner .pageBox {
+            position: absolute;
+            left: 1.9rem;
+            bottom: -0.5rem;
+            width: 3.52rem;
+            height: 1.06666rem;
+            background-color: rgba(251, 251, 251, 1);
+            display: flex;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .homeBanner .pageBox:after {
+            content: '';
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(250, 152, 1, 1);
+        }
+
+        .homeBanner .pageBox > ul {
+            display: flex;
+            justify-content: flex-start;
+            font: 0.26666rem '微软雅黑';
+            color: rgba(102, 102, 102, 1);
+            margin-left: 22px;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet {
+            width: auto;
+            height: auto;
+            margin-right: 20px;
+            display: flex;
+            align-items: flex-end;
+            background: none;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet:last-child {
+            margin-right: 0;
+        }
+
+        .homeBanner .pageBox > ul > li.swiper-pagination-bullet-active {
+            font-size: 0.4rem;
+            font-weight: 700;
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
 <div class="maMobile" style="padding-bottom: 40px">
@@ -28,11 +80,23 @@
             </div>
         </div>
         <div class="rightBannerBox">
-            <img src="asset/images/home/bannerOne.png" alt="">
+            <div id="bannerSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="asset/images/home/bannerOne.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="asset/images/home/bannerTwo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="asset/images/home/bannerThree.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="pageBox">
-            <ul>
-                <li class="bannerPageActive">01</li>
+            <ul class="swiper-pagination">
+                <li class="swiper-pagination-bullet-active">01</li>
                 <li>02</li>
                 <li>03</li>
             </ul>
@@ -107,7 +171,7 @@
             <div class="qq">
                 <img src="asset/images/public/mobile.png" alt="">
             </div>
-            <div class="wechat" style="width: .8rem">
+            <div class="wechat footerWechatShow" style="width: .8rem">
                 <img src="asset/images/public/wechat.png" alt="">
             </div>
         </div>
@@ -116,6 +180,10 @@
 
         <div class="pageTop">
             <img src="asset/images/public/top.png" alt="">
+        </div>
+
+        <div class="footerWechatBox" style="display:none">
+            <img src="asset/images/public/erweima.png" alt="">
         </div>
     </footer>
     <menu class="footerMenu">
@@ -135,7 +203,38 @@
 <script type="text/javascript" src="asset/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="asset/js/touch.js"></script>
 <!---->
+<script type="text/javascript" src="../asset/lib/swiper/swiper.min.js"></script>
 <script type="text/javascript" src="asset/js/waterFull.js"></script>
 <script type="text/javascript" src="asset/js/index.js"></script>
+<script>
+    $(function () {
+        //初始化轮播图
+        var bannerSwiper = new Swiper('#bannerSwiper', {
+            loop: true,
+            autoplay: 1000,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true,                //点击分页按钮切换
+                renderBullet: function (index, className) {
+                    return '<li class="' + className + '">' + (index + 1) + '</li>';
+                }
+            },
+        });
+
+        //鼠标滑过pagination控制swiper切换
+        for(i=0;i < bannerSwiper.pagination.bullets.length;i++){
+            bannerSwiper.pagination.bullets[i].onmouseover=function(){
+                this.click();
+            };
+        }
+
+        //如果你在swiper初始化后才决定使用clickable，可以这样设置
+        bannerSwiper.params.pagination.clickable = true ;
+        //此外还需要重新初始化pagination
+        bannerSwiper.pagination.destroy();
+        bannerSwiper.pagination.init();
+        bannerSwiper.pagination.bullets.eq(0).addClass('swiper-pagination-bullet-active');
+    })
+</script>
 </body>
 </html>
