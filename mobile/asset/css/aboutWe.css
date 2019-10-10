@@ -1,3 +1,17 @@
+.wechatPerson {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 1.3rem;
+    right: 2.5rem;
+    z-index: 999;
+}
+
+.wechatPerson > img {
+    width: 100%;
+    height: auto;
+}
+
 .aboutMain {
     position: relative;
     margin: 0 auto;
@@ -314,7 +328,8 @@
     height: max-content;
     margin-bottom: 3px;
 }
-.aboutMain .moduleFive > .showImgBox > .imgModule:nth-child(odd){
+
+.aboutMain .moduleFive > .showImgBox > .imgModule:nth-child(odd) {
     margin-right: 1%;
 }
 

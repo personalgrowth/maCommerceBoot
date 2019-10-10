@@ -1,3 +1,17 @@
+.wechatPerson {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 1.3rem;
+    right: 2.5rem;
+    z-index: 999;
+}
+
+.wechatPerson > img {
+    width: 100%;
+    height: auto;
+}
+
 .maMobile .shootProductMain {
     position: relative;
     width: 100%;

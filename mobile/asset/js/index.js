@@ -1,4 +1,15 @@
 $(function(){
+    //微信二维码显示隐藏
+    $(".wechatShowPerson").on('click', function(e){
+        e.stopPropagation();
+        $(".wechatPerson").show();
+
+        $("body").on('click', function(){
+            $(".wechatPerson").hide();
+            $("body").off('click');
+        })
+    });
+
     //顶部菜单切换
     if($(".logoModule").size() > 0){
         $(".logoModule").on("touchend", function(){

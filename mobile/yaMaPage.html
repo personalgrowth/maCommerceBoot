@@ -27,7 +27,7 @@
             <span>博爱影像</span>
         </div>
         <div class="contact">
-            <div class="qq">
+            <div class="qq wechatShowPerson">
                 <img src="asset/images/public/wechatWhite.png" alt="">
             </div>
             <span class="cut"></span>
@@ -38,6 +38,10 @@
             <div class="qq">
                 <img src="asset/images/public/home.png" alt="">
             </div>
+        </div>
+
+        <div class="wechatPerson" style="display: none">
+            <img src="asset/images/public/erweima.png" alt="">
         </div>
     </div>
     <div class="mobileMenu">
@@ -131,32 +135,7 @@
 <script type="text/javascript" src="asset/js/flex.js"></script>
 <script type="text/javascript" src="asset/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="asset/js/touch.js"></script>
+<script type="text/javascript" src="asset/js/index.js"></script>
 <!---->
-<script>
-    $(function(){
-        $(".logoModule").on("touchend", function(){
-            $(this).addClass("logoModuleActive").siblings(".logoModule").removeClass("logoModuleActive");
-            $(this).find(".imgActive").show();
-            $(this).find(".img").hide();
-            $(this).siblings(".logoModule").find(".imgActive").hide();
-            $(this).siblings(".logoModule").find('.img').show();
-        });
-
-        //标签切换
-        $(".labelCurrent li").on('touchend', function(){
-            var index = $(this).index();
-            $(this).addClass("mainLabelCurrentActive").siblings("li").removeClass("mainLabelCurrentActive");
-            $(".mainCurrent").hide().eq(index).show();
-        });
-
-        //回到页面顶部
-        $(".pageTop").on('touchend', function(){
-            console.log('top');
-            // window.scrollTo( 0, 0);
-            $('body,html').animate({scrollTop:0},300);
-            return false;
-        })
-    })
-</script>
 </body>
 </html>

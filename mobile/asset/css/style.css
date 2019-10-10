@@ -13,6 +13,7 @@
 }
 
 .homeBanner .leftLogoBox {
+    position: relative;
     width: 38%;
     height: 100%;
     display: flex;
@@ -21,7 +22,7 @@
     padding: 0.586666rem 0 0 0.4rem;
 }
 
-.homeBanner .leftLogoBox img {
+.homeBanner .leftLogoBox > img {
     width: 1.36rem;
     margin-bottom: 0.426666rem;
 }
@@ -72,6 +73,33 @@
 
 .homeBanner .leftLogoBox .contact > .wechat img,
 .homeBanner .leftLogoBox .contact > .qq img {
+    width: 100%;
+    height: auto;
+}
+
+.homeBanner .leftLogoBox .wechatPerson{
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 4.8rem;
+    z-index: 999;
+}
+
+.homeBanner .leftLogoBox .wechatPerson > img{
+    width:100%;
+    height:auto;
+}
+
+.mobileHeader .wechatPerson {
+    position: absolute;
+    width: 2.6666rem;
+    height: max-content;
+    top: 1.3rem;
+    right: 2.5rem;
+    z-index: 999;
+}
+
+.mobileHeader .wechatPerson > img {
     width: 100%;
     height: auto;
 }
