@@ -669,8 +669,18 @@
     align-items: center;
 }
 
+.maMobile .service{
+    position:fixed;
+    right: 5px;
+    bottom: 6rem;
+    width:1.2rem;
+    height: max-content;
+}
 
-
+.maMobile .service > img{
+    width:100%;
+    height:auto;
+}
 
 
 
